@@ -3,7 +3,7 @@
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
   };
 
   outputs = {
@@ -19,7 +19,6 @@
           inherit
             (pkgs.texlive)
             # Required for pandoc's default template eisvogel
-            
             scheme-small # main scheme to use, https://nixos.wiki/wiki/TexLive#Installation
             adjustbox
             babel-german
@@ -51,7 +50,6 @@
             zref
             pbox
             # additional packages for our custom template with redaction
-            
             censor
             soul
             ;
