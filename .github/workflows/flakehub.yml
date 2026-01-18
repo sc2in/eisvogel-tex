@@ -16,6 +16,6 @@ jobs:
       - uses: DeterminateSystems/determinate-nix-action@v3
       - uses: DeterminateSystems/flakehub-push@main
         with:
-          name: DeterminateSystems/flakehub-push
+          name: sc2in/eisvogel-tex
           rolling: true
           visibility: unlisted
