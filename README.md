@@ -10,7 +10,7 @@ This flake bundles:
 
 - Pandoc - Universal document converter
 - LaTeX (TeXLive) - Typesetting system with all required packages
-- **No esivogel template** - You will need to provide the eisvogel template itself.
+- Eisvogel template - Cloned from upstream
 
 ## Quick Start
 
