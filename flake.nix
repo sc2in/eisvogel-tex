@@ -3,7 +3,7 @@
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
   };
 
   outputs = {
@@ -14,6 +14,20 @@
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
+      devShells.default = pkgs.mkShell {
+        buildInputs = [
+          pkgs.pandoc
+          pkgs.texliveSmall
+          pkgs.tetex
+          self.packages.${system}.default
+        ];
+        shellHook = ''
+          mkdir -p .pandoc/templates
+          cp ./templates/eisvogel.tex .pandoc/templates/
+          export PANDOC_DATA_DIR="$PWD/.pandoc"
+        '';
+      };
+
       packages = {
         default = pkgs.texlive.combine {
           inherit
@@ -49,7 +63,7 @@
             xurl
             zref
             pbox
-            # additional packages for our custom template with redaction
+            # additional packages for adding redaction correctly
             censor
             soul
             ;

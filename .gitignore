@@ -1,0 +1,17 @@
+.envrc
+.pandoc
+.direnv
+.vscode
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.synctex.gz
+*.vrb
+*.pdf
