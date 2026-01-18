@@ -2,7 +2,7 @@
 
 > **Minimal Package Dependencies for the Eivogel LaTeX Template**
 
-[![Nix Flake](https://img.shields.io/badge/nix-flake-blue)](https://nixos.org)
+[![Nix Flake](https://img.shields.io/badge/nix-flake-blue)](https://nixos.org) [![FlakeHub](https://img.shields.io/endpoint?url=https://flakehub.com/f/sc2in/eisvogel-tex/badge)](https://flakehub.com/flake/sc2in/eisvogel-tex)
 
 ## What This Provides
 
@@ -29,25 +29,19 @@ In your `flake.nix`:
 
 ```nix
 {
-  inputs.eisvogel-tex.url = "github:sc2in/eisvogel-tex/develop";
-  
-  outputs = { self, nixpkgs, eisvogel-tex }: {
-    devShells.x86_64-linux.default = nixpkgs.legacyPackages.x86_64-linux.mkShell {
-      inputsFrom = [ eisvogel-tex.devShells.x86_64-linux.default ];
-    };
+ inputs.eisvogel-tex.url = "https://flakehub.com/f/sc2in/eisvogel-tex/*";
+ 
+  outputs = { self, eisvogel-tex }: {
+    # ...
   };
 }
 ```
 
-### Automatic Environment with Direnv
-
-Create `.envrc`:
+### Automatic Environment with nix
 
 ```bash
-use flake github:sc2in/eisvogel-tex
+nix develop
 ```
-
-Then `direnv allow`.
 
 ## Example Document
 
