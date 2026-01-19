@@ -10,7 +10,7 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  build-nix-package:
+  run-flake-checks:
     runs-on: ubuntu-22.04
     permissions:
       contents: read

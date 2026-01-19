@@ -175,7 +175,7 @@
 
           # Introduction
 
-          This is a sample document generated using Pandoc with the Eisvogel LaTeX template.
+          This is a sample document generated using Pandoc with the Eisvogel LaTeX template[^1].
 
           ## Features
 
@@ -221,6 +221,8 @@
           ## Conclusion
 
           This demonstrates the Eisvogel template working with Pandoc in a Nix environment.
+
+          [^1]: Eisvogel Template by Markus Wandmalfarbe
         '';
 
         # Build the PDF
