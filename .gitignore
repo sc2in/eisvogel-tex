@@ -2,6 +2,7 @@
 .pandoc
 .direnv
 .vscode
+result
 *.aux
 *.bbl
 *.blg
