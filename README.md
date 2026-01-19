@@ -4,12 +4,6 @@
 
 [![Nix Flake](https://img.shields.io/badge/nix-flake-blue)](https://nixos.org) [![FlakeHub](https://img.shields.io/endpoint?url=https://flakehub.com/f/sc2in/eisvogel-tex/badge)](https://flakehub.com/flake/sc2in/eisvogel-tex)
 
-# Eisvogel-TeX Nix Flake
-
-> **Minimal Package Dependencies for the Eisvogel LaTeX Template**
-
-[ [
-
 ## What This Provides
 
 This flake provides a reproducible Nix environment with:
@@ -175,6 +169,7 @@ ls *.md | entr build-pdf document.md
 **Core:** `scheme-small`
 
 **Required for Eisvogel:**
+
 - Layout & styling: `adjustbox`, `framed`, `mdframed`, `pagecolor`, `titling`, `transparent`, `background`
 - Fonts & encoding: `babel-german`, `xecjk`, `unicode-math`, `sourcecodepro`, `sourcesanspro`, `mweights`, `ly1`
 - Code & listings: `fvextra`, `upquote`, `xurl`
@@ -308,9 +303,9 @@ Contributions welcome! Areas for improvement:
 
 **Maintained by:** [Star City Security Consulting, LLC](https://github.com/sc2in)
 
-**Repository:** https://github.com/sc2in/eisvogel-tex  
-**Issues:** https://github.com/sc2in/eisvogel-tex/issues  
-**FlakeHub:** https://flakehub.com/flake/sc2in/eisvogel-tex
+**Repository:** <https://github.com/sc2in/eisvogel-tex>  
+**Issues:** <https://github.com/sc2in/eisvogel-tex/issues>  
+**FlakeHub:** <https://flakehub.com/flake/sc2in/eisvogel-tex>
 
 ***
 

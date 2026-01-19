@@ -336,9 +336,10 @@
         };
       in {
         packages = {
-          default = eisvogelInstalled;
+          default = texliveEnv;
           eisvogel-template = eisvogelInstalled;
           pdf = buildPDF;
+          texlive = texliveEnv;
         };
 
         checks = {
@@ -351,12 +352,14 @@
           buildInputs = [
             pkgs.pandoc
             texliveEnv
+            eisvogelInstalled
             pkgs.watchexec
+            pkgs.librsvg # for SVG support
           ];
 
           shellHook = ''
             mkdir -p .pandoc/templates
-            cp ${eisvogelInstalled}/${outPath}eisvogel.latex .pandoc/templates/
+            cp ${eisvogelInstalled}/${outPath}/eisvogel.latex .pandoc/templates/
 
             cat << 'EOF'
             ╔════════════════════════════════════════╗
