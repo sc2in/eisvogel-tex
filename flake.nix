@@ -19,15 +19,15 @@
         highlighting, and automatic table of contents.
       '';
 
-      homepage = "https://github.com/Wandmalfarbe/pandoc-latex-template";
-      repository = "https://github.com/Wandmalfarbe/pandoc-latex-template";
+      homepage = "https://github.com/sc2in/eisvogel-tex";
+      repository = "https://github.com/sc2in/eisvogel-tex";
       license = "CC0-1.0";
 
       maintainers = [
         {
-          name = "Your Name";
-          email = "your.email@example.com";
-          handle = "yourusername";
+          name = "Star City Security Consulting, LLC";
+          email = "inquiries@sc2.in";
+          handle = "sc2in";
         }
       ];
 
