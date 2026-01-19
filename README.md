@@ -10,7 +10,7 @@ This flake provides a reproducible Nix environment with:
 
 - **Pandoc 3.x** — Universal document converter
 - **TeX Live (minimal)** — Typesetting system with 23 packages curated for Eisvogel
-- **Eisvogel template** — Professional LaTeX template for Pandoc (v3.3.0)
+- **Eisvogel template** — Professional LaTeX template for Pandoc from upstream (v3.3.0)
 - **XeLaTeX engine** — For advanced font and Unicode support
 
 All dependencies are pinned and isolated. **If it works on your machine, it works everywhere.**
